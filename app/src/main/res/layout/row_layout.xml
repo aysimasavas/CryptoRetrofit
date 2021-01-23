@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+
+<androidx.cardview.widget.CardView
+
+
+    android:id="@+id/example_card_view"
+
+    android:background="@drawable/carview_custom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_currency"
+            android:layout_width="252dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/currency_text"
+            android:textColor="@color/black"
+            android:textSize="26sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/price_text"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            card_view:srcCompat="@android:drawable/btn_star_big_on"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
